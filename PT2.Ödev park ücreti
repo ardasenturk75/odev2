@@ -1,0 +1,24 @@
+def hesapla_ucret(arac_turu, kalma_suresi):
+    if arac_turu == "Otomobil":
+        if kalma_suresi <= 2:
+            return 5
+        else:
+            return 5 + (kalma_suresi - 2)
+    elif arac_turu == "Kamyon":
+        if kalma_suresi <= 2:
+            return 8
+        else:
+            return 8 + 2 * (kalma_suresi - 2)
+    elif arac_turu == "İş Makinesi":
+        if kalma_suresi <= 2:
+            return 12
+        else:
+            return 12 + 3 * (kalma_suresi - 2)
+    else:
+        return "Geçersiz araç türü"
+
+arac_turu = input("Araç Türü (Otomobil, Kamyon, İş Makinesi): ")
+kalma_suresi = float(input("Kalma Süresi (saat): ")
+
+ucret = hesapla_ucret(arac_turu, kalma_suresi)
+print(f"{kalma_suresi} saatlik kalma için ödemeniz gereken ücret: {ucret} TL")
